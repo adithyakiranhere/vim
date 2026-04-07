@@ -1,0 +1,91 @@
+== SESSION 1 PRACTICE FILE ==
+== Vim Basics: Modes, Movement, Insert, Save/Quit ==
+
+EXERCISE 1: MOVING AROUND
+--------------------------
+Use h, j, k, l to navigate through this text.
+Move down to each line below and try to land on the star (*) symbols.
+
+    *         *
+        *
+  *       *       *
+      *         *
+
+Try moving to each star without using arrow keys!
+Train your fingers: h=left  j=down  k=up  l=right
+
+
+EXERCISE 2: ENTERING INSERT MODE
+----------------------------------
+The lines below have missing words. Use these steps:
+  1. Move to the correct position with h/j/k/l
+  2. Press 'i' to enter INSERT mode
+  3. Type the missing word
+  4. Press Esc to return to NORMAL mode
+
+Fill in the blanks:
+
+The capital of India is _____.
+Neovim is a modern version of _____.
+The four main modes are Normal, Insert, Visual, and _____.
+The key 'j' moves the cursor _____.
+To save a file, type :_____ in command mode.
+
+
+EXERCISE 3: DIFFERENT WAYS TO ENTER INSERT MODE
+-------------------------------------------------
+Practice each insert command on the lines below:
+
+Use 'A' to append text at the END of this line -->
+<-- Use 'I' to insert text at the START of this line
+Use 'o' to open a new line BELOW this line
+Use 'O' to open a new line ABOVE this line
+Use 'a' to append text AFTER the cursor on this line
+
+
+EXERCISE 4: SAVING AND QUITTING
+---------------------------------
+Practice these commands (don't worry, you won't lose this file):
+
+1. Type :w and press Enter        -- this saves the file
+2. Type :q and press Enter        -- this quits (will fail if you edited)
+3. Type :wq and press Enter       -- this saves and quits
+4. Type :q! and press Enter       -- this quits WITHOUT saving
+5. Try ZZ in normal mode          -- shortcut for :wq
+6. Try ZQ in normal mode          -- shortcut for :q!
+
+Tip: After quitting, reopen the file with:  nvim session1_practice.txt
+
+
+EXERCISE 5: MODE AWARENESS
+-----------------------------
+At any time you can check which mode you're in by looking at
+the bottom-left of your Neovim screen. It will show:
+  -- INSERT --    when in Insert mode
+  -- VISUAL --    when in Visual mode
+  (nothing)       when in Normal mode
+
+Practice switching modes rapidly:
+  i  -> Esc -> a -> Esc -> o -> Esc -> I -> Esc -> A -> Esc -> O -> Esc
+
+Do this 10 times until it becomes muscle memory!
+
+
+EXERCISE 6: THE GOLDEN RULE
+------------------------------
+ALWAYS return to NORMAL mode when you're done typing.
+
+Normal mode is your HOME. You visit Insert mode to type,
+then come back home. Think of it like this:
+
+  Normal mode = Standing (ready to act)
+  Insert mode = Sitting down to write
+  Visual mode = Highlighting with a marker
+  Command mode = Talking to the editor
+
+You should spend 80% of your time in Normal mode.
+
+
+== CONGRATULATIONS! ==
+You completed Session 1.
+When you're ready, ask for Session 2!
