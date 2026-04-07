@@ -1,0 +1,166 @@
+== SESSION 2 PRACTICE FILE ==
+== Word, Line, and Screen Movement ==
+
+
+EXERCISE 1: WORD MOVEMENT (w, b, e)
+=====================================
+Start at the beginning of the line below.
+Use 'w' to jump word-by-word to the end. Count how many w's you need.
+
+The quick brown fox jumps over the lazy dog near the river.
+
+Now use 'b' to jump back to the beginning, word by word.
+Then use 'e' to jump to the end of each word.
+
+
+EXERCISE 2: word vs WORD (lowercase vs uppercase)
+===================================================
+Notice how 'w' stops at punctuation but 'W' skips over it.
+Try both on this line and count the difference:
+
+hello-world foo.bar test_name some-thing else.more stuff
+
+With 'w' you stop many times. With 'W' you only stop at spaces.
+
+
+EXERCISE 3: LINE BEGINNING & END (0, ^, $, g_)
+================================================
+For each line below, practice jumping with 0, ^, $, and g_:
+
+    indented line with leading spaces and trailing spaces here    
+        another deeply indented line of code goes here
+this line starts at column 1 with no indentation at all here
+    int x = 42;  // notice the difference between 0 and ^
+
+Try this sequence on each line:  0 -> ^ -> $ -> g_
+
+
+EXERCISE 4: VERTICAL JUMPS (gg, G, line numbers)
+==================================================
+Jump around this file using:
+  gg     -- go to top
+  G      -- go to bottom
+  50G    -- go to line 50
+  :100   -- go to line 100 using command mode
+
+Try jumping to line 75, then line 10, then back to top, then bottom.
+
+
+EXERCISE 5: COUNTS (the multiplier)
+=====================================
+Start at the first letter and use COUNT + MOTION on this line:
+
+one two three four five six seven eight nine ten eleven twelve
+
+Try these:
+  3w   -- jump 3 words forward
+  5w   -- jump 5 words forward
+  2b   -- jump 2 words back
+  4e   -- jump to end of 4th word ahead
+
+
+EXERCISE 6: PARAGRAPH JUMPS ({ and })
+=======================================
+Use { and } to jump between the paragraphs below.
+
+This is the first paragraph.
+It has multiple lines.
+Three lines total.
+
+This is the second paragraph.
+Also multiple lines here.
+
+This is the third paragraph.
+Just two lines.
+
+This is the fourth paragraph.
+Final one for this exercise.
+
+
+EXERCISE 7: BRACKET MATCHING (%)
+==================================
+Place your cursor on any bracket below and press % to jump to its match:
+
+function example() {
+    if (condition) {
+        return [1, 2, 3];
+    }
+}
+
+array = [one, two, [nested, list], four]
+result = (a + b) * (c - d)
+
+
+EXERCISE 8: SCREEN MOVEMENT (H, M, L, Ctrl-d, Ctrl-u)
+=======================================================
+This file is long enough for screen movement. Try:
+  H        -- jump to top of screen
+  M        -- jump to middle of screen
+  L        -- jump to bottom of screen
+  Ctrl-d   -- scroll down half page
+  Ctrl-u   -- scroll up half page
+  Ctrl-f   -- full page forward
+  Ctrl-b   -- full page back
+  zz       -- center current line
+
+
+EXERCISE 9: COMBO PRACTICE
+============================
+Try these combo movements on the line below.
+Start at the first letter.
+
+apple banana cherry date elderberry fig grape honeydew kiwi lemon
+
+  - Jump to "cherry" using 2w
+  - Jump to "kiwi" using 8w (or 7w then w)
+  - From "kiwi", jump back to "apple" using 8b
+  - Use $ to jump to end, 0 to jump back to start
+
+
+EXERCISE 10: SPEED DRILL
+==========================
+Without using h, j, k, or l, navigate through this paragraph
+using only word/line/screen motions. Try to land on each
+target word marked with [TARGET]:
+
+The cat [TARGET] sat on the mat. The dog [TARGET] ran in
+the park. The bird [TARGET] flew over the trees. The fish
+[TARGET] swam in the pond. The horse [TARGET] galloped
+across the field with great [TARGET] speed and energy.
+
+
+== EXTRA FILLER LINES FOR SCREEN MOVEMENT PRACTICE ==
+line 80
+line 81
+line 82
+line 83
+line 84
+line 85
+line 86
+line 87
+line 88
+line 89
+line 90
+line 91
+line 92
+line 93
+line 94
+line 95
+line 96
+line 97
+line 98
+line 99
+line 100  <-- try jumping here with :100 or 100G
+line 101
+line 102
+line 103
+line 104
+line 105
+line 106
+line 107
+line 108
+line 109
+line 110
+
+== END OF SESSION 2 PRACTICE FILE ==
+When done, ask for Session 3!
